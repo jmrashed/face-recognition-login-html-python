@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Login</title>
+  </head>
+  <body onload="init()">
+    <nav class="navbar text-white navbar-dark bg-dark">
+      <a href="#" class="navbar-brand"> Login </a>
+    </nav>
+    <p></p>
+    <div class="container text-center bordered" style="width: 600px">
+      <form action="login.py" method="post" enctype="multipart/form-data">
+        <video
+          onclick="snapshot(this);"
+          width="600"
+          height="400"
+          id="video"
+          controls
+          autoplay
+        ></video>
+        <br />
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          class="form-control form-control-sm text-left"
+        />
+        <br />
+        <input
+          type="text"
+          accept="image/png"
+          hidden
+          name="current_image"
+          id="current_image"
+        />
+        <button onclick="login()" class="btn-dark" value="login">Login</button>
+        <br />
+        <br />
+      </form>
+    </div>
+    <canvas id="myCanvas" width="400" height="350" hidden></canvas>
+  </body>
+ <script src="./assets/js/main.js"></script>
+</html>
