@@ -33,14 +33,13 @@ pip install -r requirements.txt
 
 3. Download the pre-trained facial recognition model from [here](https://github.com/davisking/dlib-models/raw/master/shape_predictor_68_face_landmarks.dat.bz2) and extract it to the models folder
 
-
 4. Run the Flask app
+
 ```command
 python app.py
 ```
 
 5. Open your web browser and navigate to `http://localhost:5000`
-
 
 # Usage
 
@@ -48,10 +47,9 @@ python app.py
 2. Position your face within the frame and wait for the system to recognize you.
 3. If the system recognizes you, you will be logged in. If not, you will be prompted to try again.
 
-
 # Contributing
-Contributions are welcome! Please feel free to submit a pull request.
 
+Contributions are welcome! Please feel free to submit a pull request.
 
 ## Preview
 
@@ -123,6 +121,6 @@ If it did not work, try installing below tools on windows
 - CMAKE
 - Visual Studio with CMAKE Build tools installed
 
-
 # License
+
 This project is licensed under the MIT License. See the [LICENSE]() file for details.
